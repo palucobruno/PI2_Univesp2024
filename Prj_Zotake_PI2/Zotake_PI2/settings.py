@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'Zotake_PI2.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 # POSTGRESQL
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql',
         'NAME': os.environ.get('DB_NAME', 'db_zotake'),
@@ -93,15 +93,15 @@ DATABASES = {
 		'HOST' : 'localhost',
         'PORT': '5432',
     }
-}
+}'''
 
 #SQLITE - teste na mem�ria RAM
-'''DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-}'''
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
