@@ -151,7 +151,7 @@ MEDIA_URL = 'upload/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'upload') #pasta upload na raiz para organiza��o
 
 # Redireciona para a URL da p�gina principal ap�s login
-LOGIN_REDIRECT_URL = '/order1/lista/'
+LOGIN_REDIRECT_URL = '/order/lista/'
 LOGOUT_REDIRECT_URL = '/home/'
 
 # Default primary key field type
