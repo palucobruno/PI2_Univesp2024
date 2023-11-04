@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'Zotake_PI2.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 # POSTGRESQL
-'''DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql',
         'NAME': os.environ.get('DB_NAME', 'db_zotake'),
@@ -93,15 +93,15 @@ WSGI_APPLICATION = 'Zotake_PI2.wsgi.application'
 		'HOST' : 'localhost',
         'PORT': '5432',
     }
-}'''
+}
 
 #SQLITE - teste na mem�ria RAM
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-}
+}'''
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -151,7 +151,7 @@ MEDIA_URL = 'upload/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'upload') #pasta upload na raiz para organiza��o
 
 # Redireciona para a URL da p�gina principal ap�s login
-LOGIN_REDIRECT_URL = '/order/lista/'
+LOGIN_REDIRECT_URL = '/order1/lista/'
 LOGOUT_REDIRECT_URL = '/home/'
 
 # Default primary key field type
