@@ -89,8 +89,8 @@ DATABASES = {
         'ENGINE' : 'django.db.backends.postgresql',
         'NAME': os.environ.get('DB_NAME', 'db_zotake'),
 		'USER' : 'postgres',
-		'PASSWORD' : '123456',
-		'HOST' : '0.0.0.0',
+		'PASSWORD' : '1234567 8',
+		'HOST' : 'pi2-univesp.c3btqq27zjjq.us-east-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
