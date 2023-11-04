@@ -90,7 +90,7 @@ DATABASES = {
         'NAME': os.environ.get('DB_NAME', 'db_zotake'),
 		'USER' : 'postgres',
 		'PASSWORD' : '123456',
-		'HOST' : 'localhost',
+		'HOST' : '0.0.0.0',
         'PORT': '5432',
     }
 }
