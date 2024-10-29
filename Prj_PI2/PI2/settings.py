@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
     'authentication.apps.AuthenticationConfig',
-    'order.apps.OrderConfig'
+    'order.apps.OrderConfig',
 ]
 
 MIDDLEWARE = [
@@ -95,7 +95,7 @@ WSGI_APPLICATION = 'PI2.wsgi.application'
     }
 }'''
 
-#SQLITE - teste na mem�ria RAM
+#SQLITE - teste na memória RAM
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

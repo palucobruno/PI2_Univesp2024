@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Zotake Artesanato</title>
+    <title>The Black Cat Pola Tattoo</title>
     <link rel="icon" type="image/x-icon" href="/static/icons/amigurumi.ico">
 
     <!-- Importacao dos arquivos Bootstrap -->
@@ -21,16 +21,16 @@
     <link href="/static/css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-black text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top">Zotake</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#page-top">The Black Cat Pola Tattoo</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded active" href="/">Inicio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded active bg-primary" href="/">Inicio</a></li>
                     {% if user.is_authenticated %}
                     <li class="nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded" href="{% url 'logout'%}?proximo={{request.path}}">
@@ -38,7 +38,7 @@
                         </a>
                     </li>
                     {% else %}
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded active" href="{% url 'login'%}?proximo={{request.path}}">Login</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded active bg-primary" href="{% url 'login'%}?proximo={{request.path}}">Login</a></li>
                     {% endif %}
                 </ul>
             </div>
@@ -47,13 +47,13 @@
     
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
-            <h1 class="masthead-heading text-uppercase mb-0">{% block titulo %} {% endblock %}</h1>
+            <h1 class="masthead-heading text-uppercase mb-0 text-color-gold">{% block titulo %} {% endblock %}</h1>
 
             <!-- Icone de divisao -->
             <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
+                <div class="divider-custom-line bg-black"></div>
+                <div class="divider-custom-icon text-"><i class="fas fa-star text-color-gold"></i></div>
+                <div class="divider-custom-line bg-black"></div>
             </div>
 
             <p class="masthead-subheading font-weight-light mb-0">
@@ -66,16 +66,16 @@
 
     {% endblock %}
 
-    <footer class="footer text-center">
+    <footer class="footer text-center bg-primary">
         <div class="container">
             <div class="row">
                 <!-- Localizacao -->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Localizacao</h4>
                     <p class="lead mb-0">
-                        Interior de Sao Paulo, 1 hora de Campinas/SP
+                        Campinas/SP 
                         <br />
-                        Araras, SP - CEP 13.600-000
+                        Campinas, SP - CEP 13.064-000
                     </p>
                 </div>
                 <!-- Icones de redes sociais -->
@@ -88,9 +88,10 @@
                 </div>
                 <!-- Texto sobre a empresa -->
                 <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">Sobre Zotake Artesanato</h4>
+                    <h4 class="text-uppercase mb-4">Sobre The Black Cat Pola Tattoo
+                    </h4>
                     <p class="lead mb-0">
-                        Zotake e uma empresa familiar, prezando pela qualidade, pelo carinho e
+                        The Black Cat Pola Tattoo é uma empresa familiar, prezando pela qualidade, pelo carinho e
                         pela dedicacao a todos os trabalhos para melhor atender voce.
                     </p>
                 </div>
@@ -100,7 +101,7 @@
 
     <!-- Secao de autoria -->
     <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; Projeto Integrador II 2023 - DRP04-PJI230-G13</small></div>
+        <div class="container"><small>Copyright &copy; Projeto Integrador II 2024 - DRP04-PJI230-G13</small></div>
     </div>
 </body>
 </html>

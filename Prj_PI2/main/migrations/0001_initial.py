@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('email', models.EmailField(max_length=254)),
                 ('telefone', models.CharField(max_length=11)),
                 ('arquivo', models.ImageField(blank=True, upload_to='upload/')),
-                ('mensagem', models.CharField()),
+                ('mensagem', models.CharField(max_length=255)),
                 ('criacao', models.DateTimeField(auto_now_add=True)),
             ],
         ),
